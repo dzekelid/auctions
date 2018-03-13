@@ -26,7 +26,7 @@ apis:
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/auctions/master/_listings/ebay/item-item-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/auctions/master/_listings/ebay/item-summary-search-get.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
