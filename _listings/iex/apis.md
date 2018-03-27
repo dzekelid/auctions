@@ -8,9 +8,9 @@ x-alexaRank: "225220"
 tags:
 - Marketplace
 - Market Data
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/auctions/master/_listings/iex/apis.yaml
+created: "2018-03-27"
+modified: "2018-03-27"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: IEX Trading API
@@ -22,7 +22,7 @@ apis:
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/auctions/master/_listings/iex/deep-auction-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/deep-auction-get.md
 x-common:
 - type: x-authentication
   url: https://iextrading.com/developer/docs/#authentication
