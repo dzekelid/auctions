@@ -26,7 +26,7 @@ apis:
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-category-subtree-get.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
