@@ -27,9 +27,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Merchandised Product Get Also Bought Products
-  description: 'This call returns products that were also bought when shoppers bought
-    the product specified in the request. Showing ''also bought'' products inspires
+- name: Ebay Get Merchandised Product Get Also Viewed Products
+  description: 'This call returns products that were also viewed when shoppers viewed
+    the product specified in the request. Showing ''also viewed'' products encourages
     up-selling and cross-selling. You specify the product by one of the following.
     epid (eBay Product Id) gtin (Global Trade Item Number) brand (brand name such
     as Nike) plus mpn (Manufacturer''s Part Number) Restrictions For a list of supported
@@ -43,9 +43,9 @@ apis:
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-bought-products-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-viewed-products-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-bought-products-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-viewed-products-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
