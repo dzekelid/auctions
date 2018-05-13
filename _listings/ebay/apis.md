@@ -27,28 +27,22 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Category Tree Category Tree  Get Item Aspects For Category
-  description: 'This call returns a list of aspects that are appropriate or necessary
-    for accurately describing items in the specified leaf category. Each aspect identifies
-    an item attribute (for example, color) for which the seller will be required or
-    encouraged to provide a value (or variation values) when offering an item in that
-    category on eBay. For each aspect, getItemAspectsForCategory provides complete
-    metadata, including: The aspect''s data type, format, and entry mode Whether the
-    aspect is required in listings Whether the aspect can be used for item variations
-    Whether the aspect accepts multiple values for an item Allowed values for the
-    aspectUse this information to construct an interface through which sellers can
-    enter or select the appropriate values for their items or item variations. Once
-    you collect those values, include them as product aspects when creating inventory
-    items using the Inventory API.'
+- name: Ebay Get Get Default Category Tree
+  description: A given eBay marketplace might use multiple category trees, but one
+    of those trees is considered to be the default for that marketplace. This call
+    retrieves a reference to the default category tree associated with the specified
+    eBay marketplace ID. The response includes only the tree's unique identifier and
+    version, which you can use to retrieve more details about the tree, its structure,
+    and its individual category nodes.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/138_logo.png
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-item-aspects-for-category-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/get-default-category-tree-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-item-aspects-for-category-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/get-default-category-tree-id-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
