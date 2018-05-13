@@ -27,27 +27,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Order
-  description: 'Use this call to search for and retrieve one or more orders based
-    on their creation date, last modification date, or fulfillment status using the
-    filter parameter. You can alternatively specify a list of orders using the orderIds
-    parameter. The returned Order objects contain information you can use to create
-    and process fulfillments, including: Information about the buyer and seller Information
+- name: Ebay Get Order Order
+  description: 'Use this call to retrieve the contents of an order based on its unique
+    identifier, orderId. This value was returned in the getOrders call''s orders.orderId
+    field when you searched for orders by creation date, modification date, or fulfillment
+    status. The returned Order object contains information you can use to create and
+    process fulfillments, including: Information about the buyer and seller Information
     about the order''s line items The plans for packaging, addressing and shipping
     the order The status of payment, packaging, addressing, and shipping the order
     A summary of monetary amounts specific to the order such as pricing, payments,
-    and shipping costs Important: In this call, the cancelStatus.cancelRequests array
-    is returned but is always empty. Use the getOrder call instead, which returns
-    this array fully populated with information about any cancellation requests.'
+    and shipping costs'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/138_logo.png
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
