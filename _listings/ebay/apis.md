@@ -27,22 +27,27 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Get Default Category Tree
-  description: A given eBay marketplace might use multiple category trees, but one
-    of those trees is considered to be the default for that marketplace. This call
-    retrieves a reference to the default category tree associated with the specified
-    eBay marketplace ID. The response includes only the tree's unique identifier and
-    version, which you can use to retrieve more details about the tree, its structure,
-    and its individual category nodes.
+- name: Ebay Get Order
+  description: 'Use this call to search for and retrieve one or more orders based
+    on their creation date, last modification date, or fulfillment status using the
+    filter parameter. You can alternatively specify a list of orders using the orderIds
+    parameter. The returned Order objects contain information you can use to create
+    and process fulfillments, including: Information about the buyer and seller Information
+    about the order''s line items The plans for packaging, addressing and shipping
+    the order The status of payment, packaging, addressing, and shipping the order
+    A summary of monetary amounts specific to the order such as pricing, payments,
+    and shipping costs Important: In this call, the cancelStatus.cancelRequests array
+    is returned but is always empty. Use the getOrder call instead, which returns
+    this array fully populated with information about any cancellation requests.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/138_logo.png
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/get-default-category-tree-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/get-default-category-tree-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
