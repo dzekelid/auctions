@@ -1,12 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: Ebay
-  description: The eBay platform offers an unprecedented opportunity to build a new
-    eBay business or expand your current business, reach new customers, and create
-    a potential new stream of revenue. Leverage the resources of the eBay Developers
-    Program to tap into the eBay Marketplace with millions of active users globally,
-    with tools and services that meet the diverse needs of buyers and sellers.
+  title: Ebay Get Category Tree Category Tree  Get Category Subtree
+  description: 'This call retrieves the details of all nodes of the category tree
+    hierarchy (the subtree) below a specified category of a category tree. You identify
+    the tree using the category_tree_id parameter, which was returned by the getDefaultCategoryTreeId
+    call in the categoryTreeId field. Note: This call can return a very large payload,
+    so you are strongly advised to submit the request with the following HTTP header:
+    &nbsp;&nbsp;Accept-Encoding: application/gzip With this header (in addition to
+    the required headers described under HTTP Request Headers), the call returns the
+    response with gzip compression.'
   contact:
     name: eBay Inc.
   version: 1.0.0
