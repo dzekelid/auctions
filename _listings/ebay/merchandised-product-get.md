@@ -1,12 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: Ebay
-  description: The eBay platform offers an unprecedented opportunity to build a new
-    eBay business or expand your current business, reach new customers, and create
-    a potential new stream of revenue. Leverage the resources of the eBay Developers
-    Program to tap into the eBay Marketplace with millions of active users globally,
-    with tools and services that meet the diverse needs of buyers and sellers.
+  title: Ebay Get Merchandised Product
+  description: This call returns an array of products based on the category and metric
+    specified. This includes details of the product, such as the eBay product Id (EPID),
+    title, and user reviews and ratings for the product. You can use the epid returned
+    by this call in the Browse API search call to retrieve items for this product.
+    Restrictions For a list of supported sites and other restrictions, see API Restrictions.
   contact:
     name: eBay Inc.
   version: 1.0.0
