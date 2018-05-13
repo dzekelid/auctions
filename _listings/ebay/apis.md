@@ -27,17 +27,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Item Get Items By Item Group
-  description: This call retrieves the details of the individual items in an item
-    group. An item group is an item that has various aspect differences, such as color,
-    size, storage capacity, etc. You pass in the item group Id as a URI parameter.
-    You use this call to show the item details of items with multiple aspects, such
-    as color, size, storage capacity, etc. This call returns two main containers;
-    items and commonDescriptions. The items container has an array of containers with
-    the details of each item in the group. The commonDescriptions container has an
-    array of containers for a description and the item Ids of all the items that have
-    this exact description. Because items within an item group often have the same
-    description, this decreases the size of the response. Request headers You will
+- name: Ebay Get Item Item
+  description: This call retrieves the details of a specific item, such as description,
+    price, category, all item aspects, condition, return policies, seller feedback
+    and score, shipping options, shipping costs, estimated delivery, and other information
+    the buyer needs to make a purchasing decision. The Buy APIs are designed to let
+    you create an eBay shopping experience in your app or website. This means you
+    will need to know when something, such as the availability, quantity, etc., has
+    changed in any eBay item you are offering. You can do this easily by setting the
+    fieldgroups URI parameter. This parameter lets you control what is returned in
+    the response. Setting fieldgroups to COMPACT reduces the response to only the
+    five fields that you need in order to check if any item detail has changed. Setting
+    fieldgroups to PRODUCT, adds additional fields to the default response that return
+    information about the product of the item. You can use either COMPACT or PRODUCT
+    but not both. For more information, see fieldgroups. Request headers You will
     want to use the X-EBAY-C-ENDUSERCTX request header with this call. If you are
     an eBay Network Partner you must use affiliateCampaignId=ePNCampaignId,affiliateReferenceId=referenceId
     in the header in order to be paid for selling eBay items on your site and it is
@@ -50,9 +53,9 @@ apis:
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/item-get-items-by-item-group-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/item-item-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/item-get-items-by-item-group-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/item-item-id-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
