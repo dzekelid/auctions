@@ -27,21 +27,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Merchandised Product
-  description: This call returns an array of products based on the category and metric
-    specified. This includes details of the product, such as the eBay product Id (EPID),
-    title, and user reviews and ratings for the product. You can use the epid returned
-    by this call in the Browse API search call to retrieve items for this product.
-    Restrictions For a list of supported sites and other restrictions, see API Restrictions.
+- name: Ebay Get Merchandised Product Get Also Bought Products
+  description: 'This call returns products that were also bought when shoppers bought
+    the product specified in the request. Showing ''also bought'' products inspires
+    up-selling and cross-selling. You specify the product by one of the following.
+    epid (eBay Product Id) gtin (Global Trade Item Number) brand (brand name such
+    as Nike) plus mpn (Manufacturer''s Part Number) Restrictions For a list of supported
+    sites and other restrictions, see API Restrictions. Maximum: A maximum of 12 products
+    are returned. The call will return up to 12 products, but it can be less than
+    12. If the number of products found is less than 12, the call will return all
+    of the products matching the criteria.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/138_logo.png
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-bought-products-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/merchandised-product-get-also-bought-products-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
