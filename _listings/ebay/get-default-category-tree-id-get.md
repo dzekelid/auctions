@@ -1,12 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: Ebay
-  description: The eBay platform offers an unprecedented opportunity to build a new
-    eBay business or expand your current business, reach new customers, and create
-    a potential new stream of revenue. Leverage the resources of the eBay Developers
-    Program to tap into the eBay Marketplace with millions of active users globally,
-    with tools and services that meet the diverse needs of buyers and sellers.
+  title: Ebay Get Get Default Category Tree
+  description: A given eBay marketplace might use multiple category trees, but one
+    of those trees is considered to be the default for that marketplace. This call
+    retrieves a reference to the default category tree associated with the specified
+    eBay marketplace ID. The response includes only the tree's unique identifier and
+    version, which you can use to retrieve more details about the tree, its structure,
+    and its individual category nodes.
   contact:
     name: eBay Inc.
   version: 1.0.0
