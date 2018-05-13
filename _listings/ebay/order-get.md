@@ -1,12 +1,18 @@
 ---
 swagger: "2.0"
 info:
-  title: Ebay
-  description: The eBay platform offers an unprecedented opportunity to build a new
-    eBay business or expand your current business, reach new customers, and create
-    a potential new stream of revenue. Leverage the resources of the eBay Developers
-    Program to tap into the eBay Marketplace with millions of active users globally,
-    with tools and services that meet the diverse needs of buyers and sellers.
+  title: Ebay Get Order
+  description: 'Use this call to search for and retrieve one or more orders based
+    on their creation date, last modification date, or fulfillment status using the
+    filter parameter. You can alternatively specify a list of orders using the orderIds
+    parameter. The returned Order objects contain information you can use to create
+    and process fulfillments, including: Information about the buyer and seller Information
+    about the order''s line items The plans for packaging, addressing and shipping
+    the order The status of payment, packaging, addressing, and shipping the order
+    A summary of monetary amounts specific to the order such as pricing, payments,
+    and shipping costs Important: In this call, the cancelStatus.cancelRequests array
+    is returned but is always empty. Use the getOrder call instead, which returns
+    this array fully populated with information about any cancellation requests.'
   contact:
     name: eBay Inc.
   version: 1.0.0
