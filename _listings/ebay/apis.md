@@ -27,30 +27,28 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/order-orderid-shipping-fulfillment-fulfillmentid-get.md
-- name: Ebay Get Category Tree Category Tree  Get Category Suggestions
-  description: 'This call returns an array of category tree leaf nodes in the specified
-    category tree that are considered by eBay to most closely correspond to the query
-    string q. Returned with each suggested node is a localized name for that category
-    (based on the Accept-Language header specified for the call), and details about
-    each of the category''s ancestor nodes, extending from its immediate parent up
-    to the root of the category tree. Note: This call can return a large payload,
-    so you are advised to submit the request with the following HTTP header: &nbsp;&nbsp;Accept-Encoding:
-    application/gzip With this header (in addition to the required headers described
-    under HTTP Request Headers), the call returns the response with gzip compression.
-    You identify the tree using the category_tree_id parameter, which was returned
-    by the getDefaultCategoryTreeId call in the categoryTreeId field. Important: This
-    call is not supported in the Sandbox environment. It will return a response payload
-    in which the categoryName fields contain random or boilerplate text regardless
-    of the query submitted.'
+- name: Ebay Get Category Tree Category Tree  Get Item Aspects For Category
+  description: 'This call returns a list of aspects that are appropriate or necessary
+    for accurately describing items in the specified leaf category. Each aspect identifies
+    an item attribute (for example, color) for which the seller will be required or
+    encouraged to provide a value (or variation values) when offering an item in that
+    category on eBay. For each aspect, getItemAspectsForCategory provides complete
+    metadata, including: The aspect''s data type, format, and entry mode Whether the
+    aspect is required in listings Whether the aspect can be used for item variations
+    Whether the aspect accepts multiple values for an item Allowed values for the
+    aspectUse this information to construct an interface through which sellers can
+    enter or select the appropriate values for their items or item variations. Once
+    you collect those values, include them as product aspects when creating inventory
+    items using the Inventory API.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/138_logo.png
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-category-suggestions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-item-aspects-for-category-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-category-suggestions-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/category-tree-category-tree-id-get-item-aspects-for-category-get-postman.md
 x-common:
 - type: x-blog
   url: https://go.developer.ebay.com/dev-program-blog
