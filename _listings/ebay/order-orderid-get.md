@@ -1,12 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: Ebay
-  description: The eBay platform offers an unprecedented opportunity to build a new
-    eBay business or expand your current business, reach new customers, and create
-    a potential new stream of revenue. Leverage the resources of the eBay Developers
-    Program to tap into the eBay Marketplace with millions of active users globally,
-    with tools and services that meet the diverse needs of buyers and sellers.
+  title: Ebay Get Order Order
+  description: 'Use this call to retrieve the contents of an order based on its unique
+    identifier, orderId. This value was returned in the getOrders call''s orders.orderId
+    field when you searched for orders by creation date, modification date, or fulfillment
+    status. The returned Order object contains information you can use to create and
+    process fulfillments, including: Information about the buyer and seller Information
+    about the order''s line items The plans for packaging, addressing and shipping
+    the order The status of payment, packaging, addressing, and shipping the order
+    A summary of monetary amounts specific to the order such as pricing, payments,
+    and shipping costs'
   contact:
     name: eBay Inc.
   version: 1.0.0
