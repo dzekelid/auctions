@@ -1,38 +1,39 @@
 ---
 name: IEX
+x-slug: iex
 description: IEX, the Investors Exchange, is a fair, simple and transparent stock
   exchange dedicated to investor and issuer protection.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
 x-kinRank: "9"
 x-alexaRank: "225220"
-tags:
-- Marketplace
-- Market Data
-created: "2018-03-27"
-modified: "2018-03-27"
-url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.yaml
+tags: Auctions
+created: "2018-06-17"
+modified: "2018-06-17"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.md
 specificationVersion: "0.14"
 apis:
-- name: IEX Trading API
-  description: IEX, the Investors Exchange, is a fair, simple and transparent stock
-    exchange dedicated to investor and issuer protection
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
-  humanURL: ""
-  baseURL: https://api.iextrading.com//1.0
-  tags: Auctions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/deep-auction-get.md
 - name: IEX Trading API Auction
+  x-api-slug: iex-trading-api
   description: For an example of an app that&rsquo;s using stats, see our IEX mobile
     app.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  humanURL: https://iextrading.com
+  baseURL: https://api.iextrading.com//1.0//deep/auction
+  tags: Market Data,Auctions
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/deepauction-get-openapi.md
+- name: IEX Trading API
+  x-api-slug: iex-trading-api
+  description: IEX, the Investors Exchange, is a fair, simple and transparent stock
+    exchange dedicated to investor and issuer protection.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0
   tags: Auctions
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/deep-auction-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/openapi.md
 x-common:
 - type: x-authentication
   url: https://iextrading.com/developer/docs/#authentication
@@ -47,60 +48,6 @@ x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/iex
 - type: x-developer
-  url: https://iextrading.com/developer/docs/
-- type: x-documentation
-  url: https://iextrading.com/developer/docs/
-- type: x-email
-  url: sales@iextrading.com
-- type: x-email
-  url: listings@iextrading.com
-- type: x-email
-  url: marketops@iextrading.com
-- type: x-email
-  url: sre@iextrading.com
-- type: x-email
-  url: marcomms@iextrading.com
-- type: x-email
-  url: info@iextrading.com
-- type: x-email
-  url: api@iextrading.com
-- type: x-email
-  url: legal@iextrading.com
-- type: x-email
-  url: ventures@iextrading.com
-- type: x-faq
-  url: https://iextrading.com/faq/
-- type: x-github
-  url: https://github.com/iexg
-- type: x-linkedin
-  url: https://www.linkedin.com/company/iex-group-inc-
-- type: x-press
-  url: https://iextrading.com/about/press/
-- type: x-road-map
-  url: https://iextrading.com/developer/docs/#roadmap
-- type: x-terms-of-service
-  url: https://iextrading.com/developer/docs/#terms
-- type: x-twitter
-  url: https://twitter.com/IEX
-- type: x-website
-  url: https://iextrading.com
-- type: x-websockets
-  url: https://iextrading.com/developer/docs/#websockets
-- type: x-authentication
-  url: https://iextrading.com/developer/docs/#authentication
-- type: x-blog
-  url: https://medium.com/boxes-and-lines
-- type: x-blog-rss
-  url: view-source:https://medium.com/feed/boxes-and-lines
-- type: x-branding
-  url: https://iextrading.com/brand/
-- type: x-change-log
-  url: https://iextrading.com/developer/docs/#changelog
-- type: x-crunchbase
-  url: https://crunchbase.com/organization/iex
-- type: x-developer
-  url: https://iextrading.com/developer/docs/
-- type: x-documentation
   url: https://iextrading.com/developer/docs/
 - type: x-email
   url: sales@iextrading.com
