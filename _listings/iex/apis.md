@@ -3,12 +3,12 @@ name: IEX
 x-slug: iex
 description: IEX, the Investors Exchange, is a fair, simple and transparent stock
   exchange dedicated to investor and issuer protection.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
 x-kinRank: "9"
-x-alexaRank: "225220"
+x-alexaRank: "166667"
 tags: Auctions
-created: "2018-06-17"
-modified: "2018-06-17"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.md
 specificationVersion: "0.14"
 apis:
@@ -16,7 +16,7 @@ apis:
   x-api-slug: iex-trading-api
   description: For an example of an app that&rsquo;s using stats, see our IEX mobile
     app.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//deep/auction
   tags: Market Data,Auctions
@@ -27,7 +27,7 @@ apis:
   x-api-slug: iex-trading-api
   description: IEX, the Investors Exchange, is a fair, simple and transparent stock
     exchange dedicated to investor and issuer protection.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0
   tags: Auctions
