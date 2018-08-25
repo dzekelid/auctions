@@ -7,34 +7,16 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.
 x-kinRank: "9"
 x-alexaRank: "166667"
 tags: Auctions
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.md
 specificationVersion: "0.14"
-apis:
-- name: IEX Trading API Auction
-  x-api-slug: iex-trading-api
-  description: For an example of an app that&rsquo;s using stats, see our IEX mobile
-    app.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
-  humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//deep/auction
-  tags: Market Data,Auctions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/deepauction-get-openapi.md
-- name: IEX Trading API
-  x-api-slug: iex-trading-api
-  description: IEX, the Investors Exchange, is a fair, simple and transparent stock
-    exchange dedicated to investor and issuer protection.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
-  humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0
-  tags: Auctions
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/openapi.md
+apis: []
 x-common:
+- type: x-api-gallery
+  url: http://idx.broker.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://iex.stack.network
 - type: x-authentication
   url: https://iextrading.com/developer/docs/#authentication
 - type: x-blog
