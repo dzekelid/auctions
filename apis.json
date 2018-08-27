@@ -1,0 +1,109 @@
+{
+	"name": "Streadata.io API Gallery - Auctions",
+	"description": "This is a repository of auctions APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/auctions.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://auctions.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "eBay",
+			"x-api-slug": "ebay",
+			"description": "Buy and sell electronics, cars, fashion apparel, collectibles, sporting goods, digital cameras, baby items, coupons, and everything else on eBay, the worlds online marketplace",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/138-ebay.jpg",
+			"humanURL": "https://ebay.com",
+			"baseURL": "https://api.ebay.com//",
+			"tags": "Auctions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Xignite",
+			"x-api-slug": "xignite",
+			"description": "Financial market data on-demand. Xignite financial Web services help build smarter websites and applications in minutes with zero up-front investment.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png",
+			"humanURL": "http://www.xignite.com",
+			"baseURL": "https://www.xignite.com/xVWAP.json/XigniteVWAP",
+			"tags": "Auctions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/xignite/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Blizzard",
+			"x-api-slug": "blizzard",
+			"description": "This is the documentation for the RESTful APIs exposed through the World of Warcraft community site as a service to the World of Warcraft community.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Blizzard_Entertainment_Logo.svg.png",
+			"humanURL": "http://battle.net",
+			"baseURL": "https://us.battle.net//api/wow/",
+			"tags": "Auctions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/blizzard/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "IEX",
+			"x-api-slug": "iex",
+			"description": "IEX, the Investors Exchange, is a fair, simple and transparent stock exchange dedicated to investor and issuer protection.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg",
+			"humanURL": "https://iextrading.com",
+			"baseURL": "https://api.iextrading.com//1.0",
+			"tags": "Auctions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Dezrez",
+			"x-api-slug": "dezrez",
+			"description": "Cloud based estate agent software , sales & letting agent software, estate agent website design and property management software - Dezrez  Services",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28888-www-dezrez-com.jpg",
+			"humanURL": "https://www.dezrez.com",
+			"baseURL": "https://api.dezrez.com//",
+			"tags": "Auctions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/dezrez/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Auctions",
+	"include": [
+		{
+			"name": "eBay",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/apis.yaml"
+		},
+		{
+			"name": "Xignite",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/xignite/apis.yaml"
+		},
+		{
+			"name": "Blizzard",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/blizzard/apis.yaml"
+		},
+		{
+			"name": "IEX",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/iex/apis.yaml"
+		},
+		{
+			"name": "Dezrez",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/dezrez/apis.yaml"
+		}
+	]
+}

@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/138-ebay.j
 x-kinRank: "8"
 x-alexaRank: "42"
 tags: Auctions
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/apis.md
 specificationVersion: "0.14"
 apis:
@@ -503,6 +503,28 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/orderorderidshipping-fulfillment-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/orderorderidshipping-fulfillment-get-openapi.md
+- name: Ebay - Add Order Order Shipping Fulfillment
+  x-api-slug: orderorderidshipping-fulfillment-post
+  description: 'When you group an order''s line items into one or more packages, each
+    package requires a corresponding plan for handling, addressing, and shipping;
+    this is a shipping fulfillment. For each package, execute this call once to generate
+    a shipping fulfillment associated with that package. Note: A single line item
+    in an order can consist of multiple units of a purchased item, and one unit can
+    consist of multiple parts or components. Although these components might be provided
+    by the manufacturer in separate packaging, the seller must include all components
+    of a given line item in the same package.Before using this call for a given package,
+    you must determine which line items are in the package. If the package has been
+    shipped, you should provide the date of shipment in the request. If not provided,
+    it will default to the current date and time.'
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/138-ebay.jpg
+  humanURL: https://ebay.com
+  baseURL: https://api.ebay.com//
+  tags: Commerce, Stack, internet, Marketplace, Technology, API Provider, Auctions,
+    Profiles, General Data, Relative Data, Service API, Pedestal, Historical Data
+    API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/auctions/master/_listings/ebay/orderorderidshipping-fulfillment-post-openapi.md
 - name: Ebay - Get Order Order Shipping Fulfillment Fulfillment
   x-api-slug: orderorderidshipping-fulfillmentfulfillmentid-get
   description: Use this call to retrieve the contents of a fulfillment based on its
